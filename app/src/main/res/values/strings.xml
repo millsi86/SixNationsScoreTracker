@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">6 Nations Score Tracker</string>
+    <string name="Team_A">Team A</string>
+    <string name="Team_B">Team B</string>
+    <string name="Try">Try</string>
+    <string name="conversion">Conversion</string>
+    <string name="dropGoal">Drop Goal</string>
+    <string name="penalty">Penalty Kick</string>
+    <string name="reset">Reset</string>
+    <string name="countryPrompt">Choose a Country</string>
+
+    <string-array name="countryArrays">
+        <item>Select Team</item>
+        <item>England</item>
+        <item>Ireland</item>
+        <item>Scotland</item>
+        <item>Wales</item>
+        <item>France</item>
+        <item>Italy</item>
+    </string-array>
+
+</resources>
