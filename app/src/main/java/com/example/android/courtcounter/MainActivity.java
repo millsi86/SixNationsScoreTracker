@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeam1 = 0;
-    int scoreTeam2 = 0;
+    int scoreTeam1;
+    int scoreTeam2;
 
 
         @Override
@@ -20,6 +20,16 @@ public class MainActivity extends AppCompatActivity {
         displayForTeam1(0);
         displayForTeam2(0);
         }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedState) {
+        super.onRestoreInstanceState(savedState);
+    }
 
     /**
      * Increase the score for Team 1 by 5 points for a try.
@@ -82,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void dropGoalT2(View v) {
         scoreTeam2 = scoreTeam2 +3;
+        displayForTeam2(scoreTeam2);
+    }
+
+    /**
+     * Increase the score for Team 2 by 3 points for a Penalty Kick.
+     */
+    public void penaltyT2(View v) {
+        scoreTeam2 = scoreTeam2 + 3;
         displayForTeam2(scoreTeam2);
     }
 

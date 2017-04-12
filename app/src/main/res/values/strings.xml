@@ -8,6 +8,8 @@
     <string name="penalty">Penalty Kick</string>
     <string name="reset">Reset</string>
     <string name="countryPrompt">Choose a Country</string>
+    <string name="InitialScore">0</string>
+    <string name="ImageDes">Team Emblum Images</string>
 
     <string-array name="countryArrays">
         <item>Select Team</item>
